@@ -40,6 +40,25 @@
             font-size: 1.2rem;
         }
 
+        .hero .buttons {
+            margin-top: 30px;
+        }
+
+        .hero button {
+            background-color: #0d6efd;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .hero button:hover {
+            background-color: #004fbf;
+        }
+
         .features-section {
             padding: 50px 20px;
             background-color: #ffffff;
@@ -101,6 +120,77 @@
             background-color: #004fbf;
         }
 
+        .founders-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .founders-section h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .founder-profiles {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .founder-item {
+            text-align: center;
+            padding: 20px;
+            max-width: 300px;
+        }
+
+        .founder-item img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .founder-item h3 {
+            font-size: 1.5rem;
+            color: #0d6efd;
+        }
+
+        .founder-item p {
+            font-size: 1rem;
+        }
+
+        .blogs-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+
+        .blogs-section h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .blog-posts {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .blog-post {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h3 {
+            font-size: 1.3rem;
+            color: #0d6efd;
+        }
+
+        .blog-post p {
+            font-size: 1rem;
+        }
+
         footer {
             background-color: #0d6efd;
             color: white;
@@ -119,7 +209,10 @@
     <section class="hero">
         <h2>Predict Adverse Events Before They Happen</h2>
         <p>Delivering real-time predictive analytics to enable early, low-cost interventions for high-risk patients.</p>
-        <button onclick="scrollToFeatures()">Learn More</button>
+        <div class="buttons">
+            <button onclick="window.location.href='#patients'">For Patients</button>
+            <button onclick="window.location.href='#hospitals'">For Hospitals</button>
+        </div>
     </section>
 
     <section class="features-section" id="features">
@@ -136,6 +229,36 @@
             <div class="feature-item">
                 <h3>Proactive Alerts</h3>
                 <p>Alert care teams to intervene early and prevent hospitalizations or ER visits.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="founders-section">
+        <h2>Meet Our Founders</h2>
+        <div class="founder-profiles">
+            <div class="founder-item">
+                <img src="https://via.placeholder.com/100" alt="Founder 1">
+                <h3>Jane Doe, MBA</h3>
+                <p>Jane is a healthcare strategist with 10 years of experience in healthcare technology.</p>
+            </div>
+            <div class="founder-item">
+                <img src="https://via.placeholder.com/100" alt="Founder 2">
+                <h3>John Smith, PhD</h3>
+                <p>John is a data scientist with expertise in predictive analytics and healthcare AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs-section">
+        <h2>From Our Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h3>How Predictive Analytics Can Save Lives</h3>
+                <p>Learn how data-driven insights can help healthcare providers make better decisions, leading to improved patient outcomes.</p>
+            </div>
+            <div class="blog-post">
+                <h3>The Future of Chronic Disease Management</h3>
+                <p>Explore the evolving role of technology in managing chronic diseases like diabetes, heart disease, and COPD.</p>
             </div>
         </div>
     </section>
