@@ -1,193 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MediVise - Early Intervention Predictive Analytics</title>
+    <meta name="description" content="MediVise - Blog on Predictive Analytics and Early Interventions in Healthcare">
+    <title>MediVise Blog - Predictive Analytics & Early Interventions</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
+            line-height: 1.8;
+            background-color: #f8f9fa;
             color: #333;
         }
 
-        header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-        }
-
+        /* Navigation Bar */
         nav {
-            background-color: #007bff;
-            padding: 10px;
-            text-align: center;
+            background-color: #00487C;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            padding: 8px 20px;
-            background-color: #0d6efd;
-            border-radius: 25px;
-            transition: background-color 0.3s ease;
+            padding: 0 15px;
         }
 
         nav a:hover {
-            background-color: #004fbf;
+            text-decoration: underline;
         }
 
+        nav h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
         .hero {
-            background-image: linear-gradient(to right top, #0d6efd, #0c7beb, #0985da, #0691ca, #009eb9);
-            color: white;
+            background-color: #e7eef3;
             padding: 100px 20px;
             text-align: center;
-            background-size: cover;
-            background-position: center;
         }
 
-        .hero h2 {
-            margin: 0;
-            font-size: 3rem;
-            font-weight: 600;
-            line-height: 1.2;
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #00487C;
+            margin-bottom: 20px;
         }
 
         .hero p {
-            margin: 20px 0;
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero .buttons {
-            margin-top: 30px;
-        }
-
-        .hero button {
-            background-color: #ffcc00;
-            border: none;
-            padding: 15px 40px;
-            color: #333;
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 50px;
-            margin: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .hero button:hover {
-            background-color: #ffd633;
-        }
-
-        .page-content {
-            padding: 60px 20px;
-            background-color: #ffffff;
-            text-align: center;
-        }
-
-        .page-content h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        .page-content p {
-            font-size: 1.2rem;
+            font-size: 1.5em;
             color: #555;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
+            margin-bottom: 30px;
         }
 
-        footer {
-            background-color: #0d6efd;
+        .hero .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            background-color: #ff7f50;
             color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 1rem;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
         }
 
+        .cta-buttons a:hover {
+            background-color: #ff5733;
+        }
+
+        /* Blog Section */
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00487C;
+            text-align: center;
+        }
+
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .blog-post {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-post h3 {
+            font-size: 1.8em;
+            color: #00487C;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .blog-post p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .blog-post a {
+            font-size: 1.1em;
+            color: #ff7f50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease-in;
+        }
+
+        .blog-post a:hover {
+            color: #ff5733;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00487C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ff7f50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
         @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2rem;
+            nav h1 {
+                font-size: 1.5em;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
             }
 
             .hero p {
-                font-size: 1rem;
+                font-size: 1.2em;
             }
 
-            .page-content h2 {
-                font-size: 2rem;
+            .blog-post {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .cta-buttons a {
+                font-size: 1.1em;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>MediVise</h1>
-        <p>Early Intervention Predictive Analytics Platform</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="patients.html">For Patients</a>
-        <a href="hospitals.html">For Hospitals</a>
-        <a href="#story">Our Story</a>
-        <a href="#founders">Founders</a>
-        <a href="#blogs">Blog</a>
-        <a href="#cta">Request Demo</a>
+        <h1>MediVise</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+        </div>
     </nav>
 
-    <!-- Main Hero Section -->
-    <section class="hero">
-        <h2>Predict Adverse Events Before They Happen</h2>
-        <p>Delivering real-time predictive analytics to enable early, low-cost interventions for high-risk patients.</p>
-        <div class="buttons">
-            <button onclick="window.location.href='patients.html'">For Patients</button>
-            <button onclick="window.location.href='hospitals.html'">For Hospitals</button>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Empowering Healthcare with Predictive Analytics</h1>
+        <p>Advanced technology for early intervention and proactive care management.</p>
+        <div class="cta-buttons">
+            <a href="#">For Patients</a>
+            <a href="#">For Hospitals</a>
         </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section>
+        <h2>Latest Posts</h2>
+
+        <div class="blog-container">
+            <div class="blog-post">
+                <h3>The Power of Predictive Analytics in Healthcare</h3>
+                <p>Predictive analytics is reshaping healthcare by providing insights that help care teams intervene earlier, preventing adverse events such as hospitalizations or ER visits.</p>
+                <p><a href="#">Read more...</a></p>
+            </div>
+
+            <div class="blog-post">
+                <h3>How Early Interventions Save Lives and Money</h3>
+                <p>Early intervention is not only about improving health outcomes, but it also plays a significant role in reducing healthcare costs. Proactive care can prevent hospitalizations and ER visits.</p>
+                <p><a href="#">Read more...</a></p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Outcome-Based Payment Models in Healthcare</h3>
+                <p>Predictive analytics platforms help payers realize short-term savings while improving patient outcomes, aligning with the shift toward value-based care.</p>
+                <p><a href="#">Read more...</a></p>
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- For Patients Page Content -->
-    <div class="page-content" id="patients">
-        <h2>How MediVise Helps Patients</h2>
-        <p>As a patient, you deserve to have the best care available to manage chronic conditions and prevent emergencies. MediVise
-            helps identify early signs of complications before they become critical, allowing your healthcare provider to intervene
-            before it’s too late.</p>
-    </div>
-
-    <!-- For Hospitals Page Content -->
-    <div class="page-content" id="hospitals">
-        <h2>How MediVise Helps Hospitals</h2>
-        <p>For hospitals, reducing readmissions and ER visits is a top priority. MediVise enables care teams to be proactive, rather
-            than reactive, by predicting when patients are at risk of costly complications. Our platform reduces hospital
-            burdens, improving both patient outcomes and your bottom line.</p>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 MediVise. All rights reserved.</p>
+        <p>&copy; 2024 MediVise. All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
 </body>
+
 </html>
