@@ -4,23 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MediVise - Blog on Predictive Analytics and Early Interventions in Healthcare">
-    <title>MediVise Blog - Predictive Analytics & Early Interventions</title>
+    <meta name="description" content="MediVise - Empowering Patients with Predictive Analytics">
+    <title>MediVise - For Patients</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.8;
             background-color: #f8f9fa;
             color: #333;
         }
 
-        /* Navigation Bar */
         nav {
             background-color: #00487C;
             padding: 20px;
@@ -28,7 +20,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 1.2em;
         }
 
         nav a {
@@ -37,37 +28,45 @@
             padding: 0 15px;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav h1 {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        /* Hero Section */
         .hero {
             background-color: #e7eef3;
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: bold;
             color: #00487C;
-            margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #555;
+            margin-top: 20px;
+        }
+
+        .content-section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            color: #00487C;
             margin-bottom: 30px;
         }
 
-        .hero .cta-buttons {
-            margin-top: 20px;
+        .content-section p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            text-align: center;
+            margin-top: 40px;
         }
 
         .cta-buttons a {
@@ -77,76 +76,9 @@
             border-radius: 25px;
             text-decoration: none;
             font-size: 1.2em;
-            font-weight: bold;
             margin: 0 10px;
-            transition: background-color 0.3s ease;
         }
 
-        .cta-buttons a:hover {
-            background-color: #ff5733;
-        }
-
-        /* Blog Section */
-        section {
-            padding: 50px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #00487C;
-            text-align: center;
-        }
-
-        .blog-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .blog-post {
-            background-color: white;
-            border-radius: 15px;
-            padding: 30px;
-            width: 30%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .blog-post:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        .blog-post h3 {
-            font-size: 1.8em;
-            color: #00487C;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .blog-post p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .blog-post a {
-            font-size: 1.1em;
-            color: #ff7f50;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.2s ease-in;
-        }
-
-        .blog-post a:hover {
-            color: #ff5733;
-        }
-
-        /* Footer */
         footer {
             background-color: #00487C;
             color: white;
@@ -154,42 +86,9 @@
             text-align: center;
         }
 
-        footer p {
-            margin: 0;
-        }
-
         footer a {
             color: #ff7f50;
             text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            nav h1 {
-                font-size: 1.5em;
-            }
-
-            .hero h1 {
-                font-size: 2.5em;
-            }
-
-            .hero p {
-                font-size: 1.2em;
-            }
-
-            .blog-post {
-                width: 100%;
-                margin-bottom: 30px;
-            }
-
-            .cta-buttons a {
-                font-size: 1.1em;
-            }
         }
     </style>
 </head>
@@ -201,48 +100,32 @@
         <h1>MediVise</h1>
         <div>
             <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#">For Patients</a>
+            <a href="#">For Hospitals</a>
             <a href="#">Contact</a>
-            <a href="#">Blog</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Empowering Healthcare with Predictive Analytics</h1>
-        <p>Advanced technology for early intervention and proactive care management.</p>
-        <div class="cta-buttons">
-            <a href="#">For Patients</a>
-            <a href="#">For Hospitals</a>
-        </div>
+        <h1>Personalized Healthcare for Patients</h1>
+        <p>Take control of your health with our predictive analytics platform. Stay ahead of potential risks and live your healthiest life.</p>
     </div>
 
-    <!-- Blog Section -->
-    <section>
-        <h2>Latest Posts</h2>
+    <!-- Content Section -->
+    <div class="content-section">
+        <h2>How We Help Patients</h2>
+        <p>At MediVise, we use cutting-edge predictive analytics to monitor your health data in real-time. Our platform alerts you to potential health risks before they become serious, giving you the chance to make early interventions and take proactive control of your well-being.</p>
 
-        <div class="blog-container">
-            <div class="blog-post">
-                <h3>The Power of Predictive Analytics in Healthcare</h3>
-                <p>Predictive analytics is reshaping healthcare by providing insights that help care teams intervene earlier, preventing adverse events such as hospitalizations or ER visits.</p>
-                <p><a href="#">Read more...</a></p>
-            </div>
+        <p>From managing chronic conditions like diabetes and heart disease to receiving alerts about potential complications, our system keeps you and your care team informed every step of the way. With easy access to personalized reports, you'll understand your health better than ever before.</p>
 
-            <div class="blog-post">
-                <h3>How Early Interventions Save Lives and Money</h3>
-                <p>Early intervention is not only about improving health outcomes, but it also plays a significant role in reducing healthcare costs. Proactive care can prevent hospitalizations and ER visits.</p>
-                <p><a href="#">Read more...</a></p>
-            </div>
+        <p>Whether it's through wearable health data, regular check-ins, or medication reminders, MediVise empowers you to stay informed and take action, avoiding costly ER visits or hospitalizations.</p>
 
-            <div class="blog-post">
-                <h3>Outcome-Based Payment Models in Healthcare</h3>
-                <p>Predictive analytics platforms help payers realize short-term savings while improving patient outcomes, aligning with the shift toward value-based care.</p>
-                <p><a href="#">Read more...</a></p>
-            </div>
-
+        <div class="cta-buttons">
+            <a href="#">Get Started Today</a>
+            <a href="#">Learn More</a>
         </div>
-
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
