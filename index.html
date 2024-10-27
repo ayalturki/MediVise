@@ -10,34 +10,71 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
         }
 
         header {
             background-color: #0d6efd;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            padding: 8px 20px;
+            background-color: #0d6efd;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #004fbf;
         }
 
         .hero {
-            background-color: #007bff;
+            background-image: linear-gradient(to right top, #0d6efd, #0c7beb, #0985da, #0691ca, #009eb9);
             color: white;
-            padding: 50px 20px;
+            padding: 100px 20px;
             text-align: center;
+            background-size: cover;
+            background-position: center;
         }
 
         .hero h2 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.2;
         }
 
         .hero p {
             margin: 20px 0;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero .buttons {
@@ -45,157 +82,63 @@
         }
 
         .hero button {
-            background-color: #0d6efd;
+            background-color: #ffcc00;
             border: none;
-            padding: 15px 30px;
-            color: white;
+            padding: 15px 40px;
+            color: #333;
             font-size: 1.2rem;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 50px;
             margin: 10px;
+            transition: all 0.3s ease;
         }
 
         .hero button:hover {
-            background-color: #004fbf;
+            background-color: #ffd633;
         }
 
-        .features-section {
-            padding: 50px 20px;
+        .page-content {
+            padding: 60px 20px;
             background-color: #ffffff;
-        }
-
-        .features-section h2 {
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        .features-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .feature-item {
-            flex: 1;
-            min-width: 250px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
             text-align: center;
         }
 
-        .feature-item h3 {
-            font-size: 1.5rem;
-            color: #0d6efd;
+        .page-content h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #333;
         }
 
-        .feature-item p {
-            font-size: 1rem;
-        }
-
-        .cta-section {
-            background-color: #007bff;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            margin-bottom: 20px;
-        }
-
-        .cta-section button {
-            background-color: #0d6efd;
-            border: none;
-            padding: 15px 30px;
-            color: white;
+        .page-content p {
             font-size: 1.2rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .cta-section button:hover {
-            background-color: #004fbf;
-        }
-
-        .founders-section {
-            padding: 50px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .founders-section h2 {
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        .founder-profiles {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .founder-item {
-            text-align: center;
-            padding: 20px;
-            max-width: 300px;
-        }
-
-        .founder-item img {
-            width: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        .founder-item h3 {
-            font-size: 1.5rem;
-            color: #0d6efd;
-        }
-
-        .founder-item p {
-            font-size: 1rem;
-        }
-
-        .blogs-section {
-            padding: 50px 20px;
-            background-color: #ffffff;
-        }
-
-        .blogs-section h2 {
-            text-align: center;
-            font-size: 2rem;
-        }
-
-        .blog-posts {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .blog-post {
-            flex: 1;
-            max-width: 300px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-        .blog-post h3 {
-            font-size: 1.3rem;
-            color: #0d6efd;
-        }
-
-        .blog-post p {
-            font-size: 1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
         }
 
         footer {
             background-color: #0d6efd;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .page-content h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -206,77 +149,45 @@
         <p>Early Intervention Predictive Analytics Platform</p>
     </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="patients.html">For Patients</a>
+        <a href="hospitals.html">For Hospitals</a>
+        <a href="#story">Our Story</a>
+        <a href="#founders">Founders</a>
+        <a href="#blogs">Blog</a>
+        <a href="#cta">Request Demo</a>
+    </nav>
+
+    <!-- Main Hero Section -->
     <section class="hero">
         <h2>Predict Adverse Events Before They Happen</h2>
         <p>Delivering real-time predictive analytics to enable early, low-cost interventions for high-risk patients.</p>
         <div class="buttons">
-            <button onclick="window.location.href='#patients'">For Patients</button>
-            <button onclick="window.location.href='#hospitals'">For Hospitals</button>
+            <button onclick="window.location.href='patients.html'">For Patients</button>
+            <button onclick="window.location.href='hospitals.html'">For Hospitals</button>
         </div>
     </section>
 
-    <section class="features-section" id="features">
-        <h2>Key Features</h2>
-        <div class="features-list">
-            <div class="feature-item">
-                <h3>Real-Time Data Aggregation</h3>
-                <p>Combine EHRs, wearables, and pharmacy data for a holistic view of patient health.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Predictive Risk Scores</h3>
-                <p>Identify patients likely to experience costly complications within 30, 60, or 90 days.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Proactive Alerts</h3>
-                <p>Alert care teams to intervene early and prevent hospitalizations or ER visits.</p>
-            </div>
-        </div>
-    </section>
+    <!-- For Patients Page Content -->
+    <div class="page-content" id="patients">
+        <h2>How MediVise Helps Patients</h2>
+        <p>As a patient, you deserve to have the best care available to manage chronic conditions and prevent emergencies. MediVise
+            helps identify early signs of complications before they become critical, allowing your healthcare provider to intervene
+            before it’s too late.</p>
+    </div>
 
-    <section class="founders-section">
-        <h2>Meet Our Founders</h2>
-        <div class="founder-profiles">
-            <div class="founder-item">
-                <img src="https://via.placeholder.com/100" alt="Founder 1">
-                <h3>Jane Doe, MBA</h3>
-                <p>Jane is a healthcare strategist with 10 years of experience in healthcare technology.</p>
-            </div>
-            <div class="founder-item">
-                <img src="https://via.placeholder.com/100" alt="Founder 2">
-                <h3>John Smith, PhD</h3>
-                <p>John is a data scientist with expertise in predictive analytics and healthcare AI.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="blogs-section">
-        <h2>From Our Blog</h2>
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>How Predictive Analytics Can Save Lives</h3>
-                <p>Learn how data-driven insights can help healthcare providers make better decisions, leading to improved patient outcomes.</p>
-            </div>
-            <div class="blog-post">
-                <h3>The Future of Chronic Disease Management</h3>
-                <p>Explore the evolving role of technology in managing chronic diseases like diabetes, heart disease, and COPD.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2>Transform Patient Care with Early Interventions</h2>
-        <p>Reduce healthcare costs and improve patient outcomes with MediVise.</p>
-        <button>Request a Demo</button>
-    </section>
+    <!-- For Hospitals Page Content -->
+    <div class="page-content" id="hospitals">
+        <h2>How MediVise Helps Hospitals</h2>
+        <p>For hospitals, reducing readmissions and ER visits is a top priority. MediVise enables care teams to be proactive, rather
+            than reactive, by predicting when patients are at risk of costly complications. Our platform reduces hospital
+            burdens, improving both patient outcomes and your bottom line.</p>
+    </div>
 
     <footer>
         <p>&copy; 2024 MediVise. All rights reserved.</p>
     </footer>
 
-    <script>
-        function scrollToFeatures() {
-            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
